@@ -46,7 +46,7 @@ Follow these steps to install SnapFixerX on your system:
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/SnapFixerX.git
+git clone https://github.com/munkasirhaque0x1/SnapFixerX.git
 ```
 
 **2. Navigate into the project directory**
@@ -58,16 +58,16 @@ cd SnapFixerX
 **3. Make the script executable**
 
 ```bash
-chmod +x mysnapfix
+chmod +x snapfix
 ```
 
 **4. Install it system-wide (optional but recommended)**
 
 ```bash
-sudo cp mysnapfix /usr/bin/mysnapfix
+sudo cp snapfix /usr/bin/snapfix
 ```
 
-Once installed, `mysnapfix` will be available as a global command from any terminal session.
+Once installed, `snapfix` will be available as a global command from any terminal session.
 
 ---
 
@@ -76,7 +76,7 @@ Once installed, `mysnapfix` will be available as a global command from any termi
 Run the tool with superuser privileges:
 
 ```bash
-sudo mysnapfix
+sudo snapfix
 ```
 
 That's it. SnapFixerX will handle the rest — scanning, comparing, and copying any missing `.desktop` files automatically.
@@ -86,7 +86,7 @@ That's it. SnapFixerX will handle the rest — scanning, comparing, and copying 
 ## 📟 Example
 
 ```
-$ sudo mysnapfix
+$ sudo snapfix
 
 [*] SnapFixerX — Snap Desktop Entry Fixer
 [*] Scanning: /var/lib/snapd/desktop/applications/
@@ -116,11 +116,12 @@ If all entries are already present, the tool will confirm no action was needed:
 
 ## 👤 Author
 
-| Field    | Detail                                      |
-|----------|---------------------------------------------|
-| Author   | `Md. Munkasir Haque`                                 |
-| Linkedin   | [@munkasirhaque0x1](https://www.linkedin.com/in/munkasirhaque0x1/) |
-| Contact  | `munkasir210@gmail.com`                    |
+| Field     | Detail                                                                 |
+|-----------|------------------------------------------------------------------------|
+| Author    | Md. Munkasir Haque                                                     |
+| GitHub    | [@munkasirhaque0x1](https://github.com/munkasirhaque0x1)               |
+| LinkedIn  | [munkasirhaque0x1](https://www.linkedin.com/in/munkasirhaque0x1)       |
+| Email     | munkasir210@gmail.com                                                  |
 
 ---
 
@@ -132,7 +133,7 @@ See the [LICENSE](LICENSE) file for full terms.
 ```
 MIT License
 
-Copyright (c) 2025 Your Name
+Copyright (c) 2025 Md. Munkasir Haque
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
