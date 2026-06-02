@@ -1,14 +1,20 @@
 #!/bin/sh
+
 srcdir="/var/lib/snapd/desktop/applications"
 dstdir="/usr/share/applications"
-echo "Enter App Name: "
-read file_name
-filep1=$file_name\_
-filep2=$file_name\.desktop
-file=$filep1$filep2
-for srcfile in ${srcdir}/$file
-do
-    dstfile=$(basename $srcfile)
 
-    sudo cp $srcfile $dstdir/$dstfile
+echo "Enter App Name:"
+read -r file_name
+
+file="${file_name}_${file_name}.desktop"
+
+for srcfile in "${srcdir}/${file}"
+do
+    if [ -f "$srcfile" ]; then
+        dstfile=$(basename "$srcfile")
+        sudo cp "$srcfile" "$dstdir/$dstfile"
+        echo "[+] Successfully copied: $dstfile"
+    else
+        echo "[-] Desktop file not found: $file"
+    fi
 done
